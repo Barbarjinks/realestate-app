@@ -1,0 +1,17 @@
+.NavBar{
+background-color: lightseagreen;
+border-bottom-color: grey;
+margin: 0px;
+padding: 0px;
+}
+
+.item{
+margin: 0px;
+cursor: pointer;
+padding: 6px;
+display: inline-block;
+}
+
+.item:hover{
+    background-color: rgb(56, 168, 105);
+}
