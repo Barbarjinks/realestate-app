@@ -13,7 +13,7 @@ class Properties extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:3000/api/v1/PropertyListing')
+    axios.get('https://git.heroku.com/blooming-woodland-37287.git/v1/PropertyListing')
       .then(({ data }) => this.setState({ properties: data }));
   }
 
@@ -21,7 +21,7 @@ class Properties extends React.Component {
     const { search } = this.props.location;
 
     if (prevProps.location.search !== search) {
-      axios.get(`http://localhost:3000/api/v1/PropertyListing${this.props.location.search}`)
+      axios.get(`https://git.heroku.com/blooming-woodland-37287.git/v1/PropertyListing${this.props.location.search}`)
         .then(({ data: properties }) => this.setState({ properties }))
         .catch(err => console.error(err));
     }
