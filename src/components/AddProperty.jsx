@@ -19,7 +19,7 @@ state = {
   handleAddProperty = event => {
     event.preventDefault();
     console.log(this.state.fields);
-    axios.post('https://git.heroku.com/blooming-woodland-37287.git/v1/PropertyListing', {
+    axios.post('http://localhost:3000/api/v1/PropertyListing', {
       title: this.state.fields.title,
       type: this.state.fields.type,
       city: this.state.fields.city,
